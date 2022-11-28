@@ -47,19 +47,18 @@ function generateMbi() {
     return mbi;
 }
 
+module.exports = { validateMbiFormat, generateMbi }
+
 // This is a stubbed method that in the real world would check to see if our randomly generated MBI
 // already exists.  The likelihood is low, but it should be checked.
-let mbiExists = function mbiExists(mbi) {
+function mbiExists(mbi) {
     return false;
-}
-
-module.exports = { validateMbiFormat, generateMbi, mbiExists }
-
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
 }
 
 function randomChar(vals) {
     return vals.charAt(getRandomInt(vals.length));
 }
 
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
