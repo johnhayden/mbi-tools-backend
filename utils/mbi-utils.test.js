@@ -1,4 +1,3 @@
-const mbiUtils = require('./mbi-utils');
 const {generateMbi, validateMbiFormat} = require("./mbi-utils");
 
 test('check specific validation cases', () => {
