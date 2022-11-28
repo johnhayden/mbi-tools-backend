@@ -1,12 +1,6 @@
 const mbiUtils = require('./mbi-utils');
 const {generateMbi, validateMbiFormat} = require("./mbi-utils");
 
-test('check generated length', () => {
-    expect(generateMbi().length).toBe(11);
-    expect(generateMbi().length).toBe(11);
-    expect(generateMbi().length).toBe(11);
-});
-
 test('check specific validation cases', () => {
     // First number can't be a zero
     expect(validateMbiFormat('0MF4PE4MN15')).toBe(false);
