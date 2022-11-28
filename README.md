@@ -8,3 +8,17 @@ Simple demo app that generates and verifies Medicare Beneficiary Identifiers (MB
 
 #### POST /verify
 - Validate a Medicare Beneficiary Identifier’s (MBI) format and return true or false
+
+
+-------
+
+### Run tests
+```
+npm test
+```
+
+
+### Run app server with hot-loading
+```
+npm start
+```
